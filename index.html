@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>eBay Auth Code</h2>
+  <p id="code" style="word-break:break-all;font-size:1.1em;background:#f0f0f0;padding:10px;"></p>
+  <script>
+    const code = new URLSearchParams(window.location.search).get('code');
+    document.getElementById('code').textContent = code || 'コードが見つかりません';
+  </script>
+</body>
+</html>
